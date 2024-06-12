@@ -1,0 +1,46 @@
+/* src/Card.css */
+.card {
+    background: #212B3D; /* Semi-transparent white background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 10px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease; /* Add smooth transition to the card */
+    /*backdrop-filter: blur(1px);  Add blur effect to the background *
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Optional: add a light border */
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Slightly scale up the entire card on hover */
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Add smooth transition to the image */
+    padding: 2%;
+  }
+  
+  .card:hover .card-image {
+    transform: scale(1.1); /* Scale up the image on hover */
+  }
+  
+  .card-content {
+    padding: 16px;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    margin: 0 0 10px;
+  }
+  
+  .card-description {
+    font-size: 1rem;
+    color: #555;
+  }
+  

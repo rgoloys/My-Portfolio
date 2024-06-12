@@ -1,0 +1,120 @@
+#Container{
+    display: flex;
+    justify-content: space-around;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+}
+.Qoute{
+    margin-left: 180px;
+    padding-top: 150px;
+    width: 55%;
+}
+h1{
+    font-family: 'MyFont3';
+    font-weight: 600;
+    font-size: 55px;
+}
+.position{
+    font-family: 'MyFont2', 'Courier New';
+    font-size: 28px;
+    font-weight: 550;
+}
+.position, span p{
+    padding: 0;
+    margin: 0;
+}
+span p{
+    font-family: 'MyFont2', 'Courier New';
+    font-size: 19px;
+    font-weight: lighter;
+}
+button{
+    padding: 5px 12px;
+    color: black;
+    font-size: 16px;
+}
+.Avatar{
+    margin-right: 100px;
+}
+
+  /* Responsive Styles */
+@media (max-width: 768px) {
+    .Qoute {
+      margin-left: 100px; /* Adjust margin for smaller screens */
+      padding-top: 70px;
+      width: 70%; /* Adjust width for smaller screens */
+    }
+    h1{
+        font-family: 'MyFont3';
+        font-weight: 600;
+        font-size: 40px;
+    }
+    .position{
+        font-family: 'MyFont2', 'Courier New';
+        font-size: 18px;
+        font-weight: 550;
+    }
+    .position, span p{
+        padding: 0;
+        margin: 0;
+    }
+    span p{
+        font-family: 'MyFont2', 'Courier New';
+        font-size: 12px;
+        font-weight: lighter;
+    }
+    button{
+        padding: 5px 12px;
+        color: black;
+        font-size: 16px;
+    }
+  
+    .Avatar {
+        margin-right: 0;
+    }
+
+    .Avatar img {
+        width: 250px;
+        height: 300px;
+    }
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 425px) {
+    .Qoute {
+      margin-left: 20px; /* Adjust margin for smaller screens */
+      padding-top: 50px;
+      width: 70%; /* Adjust width for smaller screens */
+      padding-bottom: 50px;
+    }
+    h1{
+        font-family: 'MyFont3';
+        font-weight: 600;
+        font-size: 30px;
+    }
+    .position{
+        font-family: 'MyFont2', 'Courier New';
+        font-size: 15px;
+        font-weight: 550;
+    }
+    .position, span p{
+        padding: 0;
+        margin: 0;
+    }
+    span p{
+        font-family: 'MyFont2', 'Courier New';
+        font-size: 10px;
+        font-weight: lighter;
+    }
+    button{
+        padding: 1.5px 4px;
+        color: black;
+        font-size: 10px;
+    }
+    .Avatar {
+        display: none;
+    }
+  }
