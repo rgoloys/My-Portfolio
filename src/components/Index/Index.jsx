@@ -4,6 +4,7 @@ import Avatar from '../../Static/Avatar.png'
 import styled, { css } from 'styled-components';
 import { useTheme } from 'styled-components';
 import { lightTheme, darkTheme } from '../theme/theme';
+import Resume from './resume'
 
 const Avatars = styled.img`
   ${({ theme }) => {
@@ -15,6 +16,7 @@ const Avatars = styled.img`
 `;
 
 const Index = () => {
+  
   const theme = useTheme();
 
   return (
@@ -23,7 +25,7 @@ const Index = () => {
         <h1>Rolando A. Goloya Jr. <br /><span className='position'>WEB DEVELOPER</span><br /><span><p>Dedicated and Passionate web developer. Eager to learn new technologies and apply ideas into real life project.</p>
         </span>
         </h1>
-        <button type='submit'>Dowload CV</button>
+        <Resume />
       </div>
       <div className="Avatar">
         <Avatars src={Avatar} alt="Avatar" />
