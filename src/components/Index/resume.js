@@ -4,17 +4,17 @@ import styled from 'styled-components';
 const Button = styled.button`
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #A6ABAE;
+  background-color: #17202A;
   color: white;
-  border: none;
+  border: 1px solid white;
   border-radius: 5px;
   cursor: pointer;
-  border: 1px solid #17202A;
   transition: background-color 0.3s;
 
   &:hover {
-    background-color: #17202A;
-    border: 1px solid white;
+    background-color: white;
+    border: 1px solid #17202A;
+    color: #17202A;
   }
 `;
 
