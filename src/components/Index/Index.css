@@ -1,120 +1,165 @@
-#Container{
+#Container {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     background-color: transparent;
     width: 100%;
     height: 100%;
-}
-.Qoute{
+  }
+  
+  .Quote {
     margin-left: 180px;
     padding-top: 150px;
     width: 55%;
-}
-h1{
+  }
+  
+  h2 {
     font-family: 'MyFont3';
     font-weight: 600;
     font-size: 55px;
-}
-.position{
+  }
+  
+  .position {
     font-family: 'MyFont2', 'Courier New';
     font-size: 28px;
     font-weight: 550;
-}
-.position, span p{
+  }
+  
+  .position, span p {
     padding: 0;
     margin: 0;
-}
-span p{
+  }
+  
+  span p {
     font-family: 'MyFont2', 'Courier New';
     font-size: 19px;
     font-weight: lighter;
-}
-button{
+  }
+  
+  button {
     padding: 5px 12px;
     color: black;
     font-size: 16px;
-}
-.Avatar{
+  }
+  
+  .Avatar {
     margin-right: 100px;
-}
-
+  }
+  
+  .Avatar img {
+    width: auto;
+    height: auto;
+  }
+  
   /* Responsive Styles */
-@media (max-width: 768px) {
-    .Qoute {
-      margin-left: 100px; /* Adjust margin for smaller screens */
+  @media (max-width: 1200px) {
+    .Quote {
+      margin-left: 120px;
+      padding-top: 120px;
+      width: 60%;
+    }
+  
+    h2 {
+      font-size: 45px;
+    }
+  
+    .position {
+      font-size: 24px;
+    }
+  
+    span p {
+      font-size: 16px;
+    }
+  
+    .Avatar img {
+      width: 300px;
+      height: 300px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #Container {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .Quote {
+      margin-left: 0;
       padding-top: 70px;
-      width: 70%; /* Adjust width for smaller screens */
+      width: 80%;
+      text-align: center;
     }
-    h1{
-        font-family: 'MyFont3';
-        font-weight: 600;
-        font-size: 40px;
+  
+    h2 {
+      font-size: 40px;
     }
-    .position{
-        font-family: 'MyFont2', 'Courier New';
-        font-size: 18px;
-        font-weight: 550;
+  
+    .position {
+      font-size: 18px;
     }
-    .position, span p{
-        padding: 0;
-        margin: 0;
+  
+    span p {
+      font-size: 14px;
     }
-    span p{
-        font-family: 'MyFont2', 'Courier New';
-        font-size: 12px;
-        font-weight: lighter;
-    }
-    button{
-        padding: 5px 12px;
-        color: black;
-        font-size: 16px;
+  
+    button {
+      padding: 5px 12px;
+      color: black;
+      font-size: 16px;
     }
   
     .Avatar {
-        margin-right: 0;
+      margin-right: 0;
+      margin-top: 30px;
     }
-
+  
     .Avatar img {
-        width: 250px;
-        height: 300px;
-    }
-}
-
-
-
-/* Responsive Styles */
-@media (max-width: 425px) {
-    .Qoute {
-      margin-left: 20px; /* Adjust margin for smaller screens */
-      padding-top: 50px;
-      width: 70%; /* Adjust width for smaller screens */
-      padding-bottom: 50px;
-    }
-    h1{
-        font-family: 'MyFont3';
-        font-weight: 600;
-        font-size: 30px;
-    }
-    .position{
-        font-family: 'MyFont2', 'Courier New';
-        font-size: 15px;
-        font-weight: 550;
-    }
-    .position, span p{
-        padding: 0;
-        margin: 0;
-    }
-    span p{
-        font-family: 'MyFont2', 'Courier New';
-        font-size: 10px;
-        font-weight: lighter;
-    }
-    button{
-        padding: 1.5px 4px;
-        color: black;
-        font-size: 10px;
-    }
-    .Avatar {
-        display: none;
+      width: 250px;
+      height: 250px;
     }
   }
+  
+  @media (max-width: 425px) {
+    #Container {
+        flex-direction: column-reverse;
+        align-items: center;
+      }
+      .Avatar {
+        margin: 0;
+        margin-top: 0;
+        position: absolute;
+        mix-blend-mode: difference;
+      }
+    
+      .Avatar img {
+        width: 250px;
+        height: 250px;
+      }
+    .Quote {
+      margin-left: 0;
+      padding-top: 50px;
+      width: 90%;
+      text-align: center;
+      padding-bottom: 50px;
+    }
+  
+    h2 {
+      font-size: 30px;
+    }
+  
+    .position {
+      font-size: 15px;
+    }
+  
+    span p {
+      font-size: 12px;
+    }
+  
+    button {
+      padding: 1.5px 4px;
+      color: black;
+      font-size: 10px;
+    }
+  
+  }
+  
