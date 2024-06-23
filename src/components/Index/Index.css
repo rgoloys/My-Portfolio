@@ -9,7 +9,7 @@
   
   .Quote {
     margin-left: 180px;
-    padding-top: 150px;
+    padding-top: 50px;
     width: 55%;
   }
   
@@ -55,7 +55,7 @@
   @media (max-width: 1200px) {
     .Quote {
       margin-left: 120px;
-      padding-top: 120px;
+      padding-top: 50px;
       width: 60%;
     }
   
@@ -85,7 +85,7 @@
   
     .Quote {
       margin-left: 0;
-      padding-top: 70px;
+      padding-top: 50px;
       width: 80%;
       text-align: center;
     }
@@ -100,17 +100,10 @@
   
     span p {
       font-size: 14px;
-    }
-  
-    button {
-      padding: 5px 12px;
-      color: black;
-      font-size: 16px;
-    }
-  
+    }  
     .Avatar {
       margin-right: 0;
-      margin-top: 30px;
+      margin-top: 20px;
     }
   
     .Avatar img {
@@ -130,8 +123,8 @@
       }
     
       .Avatar img {
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 200px;
       }
     .Quote {
       margin: 0;
@@ -141,7 +134,7 @@
     }
   
     h2 {
-      font-size: 30px;
+      font-size: 25px;
     }
   
     .position {
@@ -151,12 +144,5 @@
     span p {
       font-size: 12px;
     }
-  
-    button {
-      padding: 1.5px 4px;
-      color: black;
-      font-size: 10px;
-    }
-  
   }
   

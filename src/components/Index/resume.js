@@ -16,6 +16,15 @@ const Button = styled.button`
     border: 1px solid #17202A;
     color: #17202A;
   }
+  @media (max-width: 768px) {
+    padding: 8px 18px;
+    font-size: 18px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 4px 16px;
+    font-size: 14px;
+  }
 `;
 
 const resume = () => {
