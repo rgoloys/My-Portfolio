@@ -22,7 +22,7 @@ const Paragraph = styled.p`
     return css`
       color: ${color};
       font-weight: 600;
-      font-size: 20px;
+      font-size: 18px;
     &:hover{
       color: ${color === lightTheme.color ? 'blue' : 'blue'};
 
@@ -51,7 +51,7 @@ const Footer = () => {
   return (  
     <Containers id='Footer'>     
       <Container>
-          <Paragraph theme={theme}>
+          <Paragraph theme={theme} className='p'>
               rgoloyajr@gmail.com
           </Paragraph>
           <ul>

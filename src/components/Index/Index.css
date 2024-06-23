@@ -126,21 +126,18 @@
       }
       .Avatar {
         margin: 0;
-        margin-top: 0;
-        position: absolute;
-        mix-blend-mode: difference;
+        padding : 0;
       }
     
       .Avatar img {
-        width: 250px;
-        height: 250px;
+        width: 150px;
+        height: 150px;
       }
     .Quote {
-      margin-left: 0;
-      padding-top: 50px;
+      margin: 0;
+      padding: 0;
       width: 90%;
       text-align: center;
-      padding-bottom: 50px;
     }
   
     h2 {
