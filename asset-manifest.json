@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/My-Portfolio/static/css/main.e2cb870f.css",
-    "main.js": "/My-Portfolio/static/js/main.073c1876.js",
+    "main.css": "/My-Portfolio/static/css/main.7470e7b4.css",
+    "main.js": "/My-Portfolio/static/js/main.3f53a3a4.js",
     "static/media/Agromart.png": "/My-Portfolio/static/media/Agromart.598b6d295abe6b3136ab.png",
     "static/media/Avatar.png": "/My-Portfolio/static/media/Avatar.6204b77018f26a3c2cb7.png",
     "static/media/Intern.png": "/My-Portfolio/static/media/Intern.d427fa297b4c1b885b7c.png",
@@ -26,11 +26,11 @@
     "static/media/bootstrap.png": "/My-Portfolio/static/media/bootstrap.268c4375260420e8d982.png",
     "static/media/facebook.png": "/My-Portfolio/static/media/facebook.b293d5363351752caf25.png",
     "index.html": "/My-Portfolio/index.html",
-    "main.e2cb870f.css.map": "/My-Portfolio/static/css/main.e2cb870f.css.map",
-    "main.073c1876.js.map": "/My-Portfolio/static/js/main.073c1876.js.map"
+    "main.7470e7b4.css.map": "/My-Portfolio/static/css/main.7470e7b4.css.map",
+    "main.3f53a3a4.js.map": "/My-Portfolio/static/js/main.3f53a3a4.js.map"
   },
   "entrypoints": [
-    "static/css/main.e2cb870f.css",
-    "static/js/main.073c1876.js"
+    "static/css/main.7470e7b4.css",
+    "static/js/main.3f53a3a4.js"
   ]
 }
