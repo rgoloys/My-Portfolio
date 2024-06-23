@@ -32,7 +32,7 @@ const Header = () => {
         <ul>
           <li><a href="#about"><Navbar theme={theme}>About</Navbar></a></li>
           <li><a href="#projects"><Navbar theme={theme}>Projects</Navbar></a></li>
-          <li><a href="#contact"><Navbar theme={theme}>Contact</Navbar></a></li>
+          <li><a href="#Footer"><Navbar theme={theme}>Links</Navbar></a></li>
         </ul>
       </nav>
     </header>

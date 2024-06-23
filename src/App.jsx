@@ -2,12 +2,11 @@ import './App.css';
 import Header from './components/Header/Header';
 import Index from './components/Index/Index';
 import CardContainer from './components/Cards/CardContainer';
-import Skills from './components/Skills/Skills';
 import React, { useState } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme } from './components/theme/theme';
 import ThemeToggle from './components/theme/ThemeToggle';
-
+import Footer from './components/Footer/Footer'
 
 const AppContainer = styled.div`
   background-color: ${({ theme }) => theme.background};
@@ -29,7 +28,7 @@ function App() {
         <Header />
         <Index />
         <CardContainer />
-        <Skills />
+        <Footer />
       </AppContainer>    
     </ThemeProvider>
 

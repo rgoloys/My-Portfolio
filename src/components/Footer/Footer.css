@@ -1,0 +1,13 @@
+ul{
+    display: inline-flex;
+    text-decoration: none;
+}
+ul li{
+    text-decoration: none;
+    list-style: none;
+    margin-right: 15px;
+}
+ul li img{
+    width: 30px;
+    height: 30px;
+}

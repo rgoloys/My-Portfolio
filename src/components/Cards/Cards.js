@@ -1,6 +1,8 @@
 import React from 'react';
 import './Cards.css';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { useTheme } from 'styled-components';
+import { lightTheme, darkTheme } from '../theme/theme';
 
 const CardWrapper = styled.div`
   max-width: 300px;
@@ -24,7 +26,7 @@ const CardImage = styled.img`
   object-fit: cover;
   transition: transform 0.3s ease;
   padding: 2%;
-
+  
   &:hover {
     transform: scale(1.1);
   }
@@ -35,9 +37,23 @@ const CardContent = styled.div`
 `;
 
 const CardTitle = styled.h3`
-  font-size: 1.5rem;
-  margin: 0 0 10px;
-  // color: #333;
+  ${({ theme }) => {
+    const color = theme; 
+    if(theme === 'light'){
+      theme = lightTheme.color
+    }else{
+      theme = darkTheme.color
+    }
+    return css`
+      color: ${color};
+      font-size: 1.5rem;
+      margin: 0 0 10px;
+    &:hover{
+      color: ${color === lightTheme.color ? 'blue' : 'blue'};
+
+    }
+    `;
+  }}
 `;
 
 const CardDescription = styled.p`
@@ -58,15 +74,9 @@ const Icon = styled.img`
 `;
 
 const Card = ({ title, description, image, link, icons }) => {
-  return (
-    // <div className="card">
-    //   <img src={image} alt={title} className="card-image" />
-    //   <div className="card-content">
-    //     <h2 className="card-title">{title}</h2>
-       
-    //   </div>
-    // </div>
+  const theme = useTheme();
 
+  return (
     <CardWrapper>
       <a href={link} target="_blank" rel="noopener noreferrer" className='hyperlink'>
         <CardImage src={image} alt={title} />
@@ -76,7 +86,7 @@ const Card = ({ title, description, image, link, icons }) => {
           ))}
         </IconContainer>
         <CardContent>
-          <CardTitle>{title}</CardTitle>
+          <CardTitle theme={theme}>{title}</CardTitle>
           {description && <CardDescription>{description}</CardDescription>}
 
         </CardContent>
