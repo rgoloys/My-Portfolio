@@ -208,20 +208,6 @@ function App() {
               </a>
             </div>
 
-            <div className="signal-strip" aria-label="Portfolio quick stats">
-              <span>
-                <strong>{projects.length}</strong>
-                curated repos
-              </span>
-              <span>
-                <strong>{techStack.length}</strong>
-                technologies
-              </span>
-              <span>
-                <strong>2026</strong>
-                active updates
-              </span>
-            </div>
           </div>
 
           <div className="hero-visual" aria-label="Developer command center portrait">

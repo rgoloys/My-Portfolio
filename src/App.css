@@ -273,29 +273,6 @@ a {
   transform: translateY(-3px);
 }
 
-.signal-strip {
-  display: grid;
-  gap: 12px;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  margin-top: 36px;
-  max-width: 620px;
-}
-
-.signal-strip span {
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: 18px;
-  color: var(--muted);
-  display: grid;
-  gap: 4px;
-  padding: 16px;
-}
-
-.signal-strip strong {
-  color: var(--text);
-  font-size: 26px;
-}
-
 .hero-visual {
   display: grid;
   gap: 18px;
@@ -409,19 +386,21 @@ a {
 .skills-grid {
   display: grid;
   gap: 14px;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .skill-chip {
+  align-items: center;
   animation: riseIn 520ms ease both;
   animation-delay: var(--delay);
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 18px;
   display: grid;
-  gap: 7px;
-  min-height: 132px;
-  padding: 18px;
+  column-gap: 12px;
+  grid-template-columns: 44px minmax(0, 1fr);
+  min-height: 104px;
+  padding: 16px;
   position: relative;
   transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
 }
@@ -445,13 +424,20 @@ a {
 }
 
 .skill-chip img {
-  height: 34px;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 14px;
+  grid-row: 1 / span 2;
+  height: 42px;
   object-fit: contain;
-  width: 34px;
+  padding: 8px;
+  width: 42px;
 }
 
 .skill-chip span {
   font-weight: 900;
+  line-height: 1.15;
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .skill-chip small {
@@ -911,9 +897,6 @@ a {
     position: static;
   }
 
-  .skills-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
 }
 
 @media (max-width: 720px) {
@@ -1013,20 +996,9 @@ a {
     line-height: 1.6;
   }
 
-  .signal-strip,
   .project-grid,
   .social-grid {
     grid-template-columns: 1fr;
-  }
-
-  .signal-strip {
-    gap: 10px;
-  }
-
-  .signal-strip span {
-    grid-template-columns: auto 1fr;
-    align-items: center;
-    min-height: 66px;
   }
 
   .avatar-frame {
@@ -1040,13 +1012,9 @@ a {
     max-width: none;
   }
 
-  .skills-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .skill-chip {
-    min-height: 112px;
-    padding: 15px;
+    min-height: 92px;
+    padding: 14px;
   }
 
   .section-heading h2,
@@ -1138,12 +1106,18 @@ a {
     width: 100%;
   }
 
-  .skills-grid {
-    grid-template-columns: 1fr;
+  .skill-chip {
+    column-gap: 10px;
+    grid-template-columns: 38px minmax(0, 1fr);
+    min-height: 86px;
+    padding: 12px;
   }
 
-  .skill-chip {
-    min-height: 96px;
+  .skill-chip img {
+    border-radius: 12px;
+    height: 36px;
+    padding: 7px;
+    width: 36px;
   }
 
   .inspector-header {
