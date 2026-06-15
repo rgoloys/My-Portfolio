@@ -127,6 +127,10 @@ function App() {
     projects.find((project) => project.id === activeProjectId) || filteredProjects[0] || projects[0];
 
   const handleProjectMove = (event) => {
+    if (event.pointerType !== 'mouse') {
+      return;
+    }
+
     const card = event.currentTarget;
     const rect = card.getBoundingClientRect();
     const x = event.clientX - rect.left;
