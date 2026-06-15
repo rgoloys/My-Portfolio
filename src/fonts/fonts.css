@@ -1,17 +1,27 @@
-/* src/fonts.css */
 @font-face {
-    font-family: 'MyFont';
-    src: url('./static/JosefinSans-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Josefin';
+  src: url('./static/JosefinSans-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
 
-    font-family: 'MyFont3';
-    src: url('./static/DancingScript-Medium.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    
-    font-family: 'MyFont';
-    src: url('./static/DancingScript-Bold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+@font-face {
+  font-family: 'Josefin';
+  src: url('./static/JosefinSans-SemiBold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Josefin';
+  src: url('./static/JosefinSans-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'DisplayScript';
+  src: url('./static/DancingScript-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
 }
